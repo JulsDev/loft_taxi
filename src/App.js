@@ -3,7 +3,8 @@ import React from 'react'
 import logoImg from './assets/images/logo-img.svg';
 import logoText from './assets/images/logo-text.svg';
 
-import LoginForm from './components/LoginForm';
+// import LoginForm from './components/LoginForm';
+import RegistrationForm from './components/RegistrationForm';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           </div>
         </div>
         <div className='mainPage_formBlock'>
-          <LoginForm />
+          {/* <LoginForm /> */}
+          <RegistrationForm />
         </div>
       </div>
     </div>

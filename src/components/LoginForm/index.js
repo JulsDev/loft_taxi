@@ -16,6 +16,7 @@ export default function LoginForm() {
           type='email'
           name='email'
           size='28'
+          placeholder='mail@mail.ru'
           className='form__input'
         />
       </div>
@@ -26,6 +27,7 @@ export default function LoginForm() {
           type='password'
           name='password'
           size='28'
+          placeholder='********'
           className='form__input form__input--last'
         />
         <p className='form__question'>Забыли пароль?</p>
