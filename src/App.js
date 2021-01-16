@@ -5,10 +5,12 @@ import logoText from './assets/images/logo-text.svg';
 
 // import LoginForm from './components/LoginForm';
 import RegistrationForm from './components/RegistrationForm';
+// import Home from './pages/Home';
 
 function App() {
   return (
     <div className='wrapper'>
+      {/* <Home /> */}
       <div className='container app-section'>
         <div className='mainPage_logoBlock'>
           <div className='logo-block'>

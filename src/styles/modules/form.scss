@@ -55,6 +55,11 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 29px;
+  
+  &:hover {
+    background-color: $primaryActive;
+    transition: 0.5s;
+  }
 }
 
 .form__notice {

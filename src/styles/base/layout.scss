@@ -70,11 +70,6 @@ button{
   outline: none;
   background: transparent;
   cursor: pointer;
-
-  &:hover {
-    background-color: $primaryActive;
-    transition: 0.5s;
-  }
 }
 
 table{
