@@ -10,7 +10,7 @@ body{
   -moz-osx-font-smoothing: grayscale;
   background: $defaultBack; 
   font-size: 16px;
-  font-family: 'alegreya_sans', Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   position: relative;
 }
 
@@ -67,12 +67,13 @@ a {
 
 button{
   border: none;
+  outline: none;
   background: transparent;
   cursor: pointer;
 
   &:hover {
-    // background-color: $buttonHover;
-    transition: 0.7s;
+    background-color: $primaryActive;
+    transition: 0.5s;
   }
 }
 

@@ -3,6 +3,8 @@ import React from 'react'
 import logoImg from './assets/images/logo-img.svg';
 import logoText from './assets/images/logo-text.svg';
 
+import LoginForm from './components/LoginForm';
+
 function App() {
   return (
     <div className='wrapper'>
@@ -14,7 +16,7 @@ function App() {
           </div>
         </div>
         <div className='mainPage_formBlock'>
-          Здесь будет форма
+          <LoginForm />
         </div>
       </div>
     </div>
