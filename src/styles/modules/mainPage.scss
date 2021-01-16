@@ -1,0 +1,28 @@
+.app-section {
+  display: flex;
+  width: 100%;
+}
+
+.mainPage_logoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: $mainBack;
+}
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    margin-bottom: 22px;
+  }
+}
+
+.mainPage_formBlock {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
