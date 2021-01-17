@@ -21,11 +21,11 @@ export default function RegistrationForm() {
         />
       </div>
       <div className='form__input-row'>
-        <label htmlFor='password' className='form__label'>Как вас зовут?*</label>
+        <label htmlFor='fullName' className='form__label'>Как вас зовут?*</label>
         <input
-          id='name'
+          id='fullName'
           type='text'
-          name='name'
+          name='fullName'
           size='38'
           placeholder='Петр Александрович'
           className='form__input'
