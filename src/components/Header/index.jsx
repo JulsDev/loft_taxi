@@ -3,20 +3,10 @@ import React from 'react'
 import logoImg from '../../assets/images/logo-img.svg';
 import logoText from '../../assets/images/logo-text.svg';
 
-import Map from '../Map';
-import Profile from '../Profile';
-
-const PAGES = {
-  map: <Map />,
-  profile: <Profile />
-}
-
-class Home extends React.Component {
-
-  state = { currentPage: 'map' };
+class Header extends React.Component {
 
   navigateTo = (page) => {
-    this.setState({ currentPage: page });
+    this.props.changePage(page);
   };
 
   render() {
@@ -58,14 +48,9 @@ class Home extends React.Component {
             </nav>
           </div>
         </header>
-        <main>
-          <section>
-            {PAGES[this.state.currentPage]}
-          </section>
-        </main>
       </>
     )
   }
 }
 
-export default Home;
+export default Header;
