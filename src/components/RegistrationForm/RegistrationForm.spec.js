@@ -1,5 +1,5 @@
 import React from 'react'
-import RegistrationForm from './'
+import { RegistrationForm } from './'
 import { render } from '@testing-library/react'
 
 describe("RegistrationForm", () => {

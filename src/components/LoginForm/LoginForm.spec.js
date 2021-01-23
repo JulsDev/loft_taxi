@@ -1,5 +1,5 @@
 import React from 'react'
-import LoginForm from './'
+import { LoginForm } from './'
 import { render } from '@testing-library/react'
 
 describe("LoginForm", () => {

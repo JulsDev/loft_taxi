@@ -3,7 +3,7 @@ import React from 'react'
 import logoImg from '../../assets/images/logo-img.svg';
 import logoText from '../../assets/images/logo-text.svg';
 
-class Header extends React.Component {
+export class Header extends React.Component {
 
   navigateTo = (page) => {
     this.props.changePage(page);
@@ -14,10 +14,15 @@ class Header extends React.Component {
       <>
         <header className='header__wrapper'>
           <div className='header__content'>
-            <div className='logo'>
-              <img src={logoImg} alt='loft taxi logo' className='logo__img' />
-              <img src={logoText} alt='loft taxi logo' />
-            </div>
+            <button
+              className='nav__button'
+              onClick={() => this.navigateTo('home')}
+            >
+              <div className='logo'>
+                <img src={logoImg} alt='loft taxi logo' className='logo__img' />
+                <img src={logoText} alt='loft taxi logo' />
+              </div>
+            </button>
             <nav className='navigation'>
               <ul className='nav__list'>
                 <li className='nav__item'>
@@ -52,5 +57,3 @@ class Header extends React.Component {
     )
   }
 }
-
-export default Header;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Map from './'
+import { Map } from './'
 import { render } from '@testing-library/react'
 
 describe("Profile", () => {
