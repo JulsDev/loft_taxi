@@ -2,7 +2,8 @@ import React from 'react'
 
 export function LoginForm() {
 
-  function handleSubmitLogin() {
+  function handleSubmitLogin(e) {
+    e.preventDefault();
     console.log('handleSubmitLogin');
   }
 

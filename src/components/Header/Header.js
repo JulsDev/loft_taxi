@@ -1,5 +1,6 @@
 import React from 'react'
 
+import styles from './Header.module.scss';
 import logoImg from '../../assets/images/logo-img.svg';
 import logoText from '../../assets/images/logo-text.svg';
 
@@ -12,38 +13,38 @@ export class Header extends React.Component {
   render() {
     return (
       <>
-        <header className='header__wrapper'>
-          <div className='header__content'>
+        <header className={styles.headerWrapper}>
+          <div className={styles.headerContent}>
             <button
               className='nav__button'
               onClick={() => this.navigateTo('home')}
             >
-              <div className='logo'>
-                <img src={logoImg} alt='loft taxi logo' className='logo__img' />
+              <div className={styles.logo}>
+                <img src={logoImg} alt='loft taxi logo' className={styles.logoImg} />
                 <img src={logoText} alt='loft taxi logo' />
               </div>
             </button>
-            <nav className='navigation'>
-              <ul className='nav__list'>
-                <li className='nav__item'>
+            <nav className={styles.navigation}>
+              <ul className={styles.navList}>
+                <li className={styles.navItem}>
                   <button
-                    className='nav__button'
+                    className={styles.navButton}
                     onClick={() => this.navigateTo('map')}
                   >
                     Карта
                   </button>
                 </li>
-                <li className='nav__item'>
+                <li className={styles.navItem}>
                   <button
-                    className='nav__button'
+                    className={styles.navButton}
                     onClick={() => this.navigateTo('profile')}
                   >
                     Профиль
                   </button>
                 </li>
-                <li className='nav__item'>
+                <li className={styles.navItem}>
                   <button
-                    className='nav__button'
+                    className={styles.navButton}
                     onClick={() => {}}
                   >
                     Выйти
