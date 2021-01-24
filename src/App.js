@@ -5,12 +5,6 @@ import { Home } from './pages/Home';
 import { Map } from './pages/Map';
 import { Profile } from './pages/Profile';
 
-const PAGES = {
-  home: <Home />,
-  map: <Map />,
-  profile: <Profile />
-}
-
 class App extends React.Component {
 
   state = { currentPage: 'home' };
@@ -25,7 +19,11 @@ class App extends React.Component {
         <Header changePage={(page) => this.changePage(page)} />
         <main>
           <section>
-            {PAGES[this.state.currentPage]}
+            {{
+              home: <Home changePage={(page) => this.changePage(page)} />,
+              map: <Map />,
+              profile: <Profile />
+            }[this.state.currentPage]}
           </section>
         </main>
       </>

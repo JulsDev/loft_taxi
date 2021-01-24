@@ -1,9 +1,11 @@
 import React from 'react'
 
-export function RegistrationForm() {
+export function RegistrationForm(props) {
+  const { changePage, setLoginStatus } = props;
 
-  function handleSubmitRegistration() {
-    console.log('handleSubmit Registration');
+  function handleSubmitRegistration(e) {
+    e.preventDefault();
+    changePage('map');
   }
 
   return (
@@ -49,7 +51,15 @@ export function RegistrationForm() {
       >
         Зарегистрироваться
       </button>
-      <p>Уже зарегестрированны? <span className='form__notice'>Войти</span></p>
+      <div className="form-notice__block">
+        <p>Уже зарегестрированны?</p>
+        <button
+          className='form-notice'
+          onClick={() => setLoginStatus(true)}
+        >
+          Войти
+        </button>
+      </div>
     </form>
   )
 }

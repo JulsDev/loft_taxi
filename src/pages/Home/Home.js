@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import styles from './Home.module.scss';
 import logoImg from '../../assets/images/logo-img.svg';
 import logoText from '../../assets/images/logo-text.svg';
 
 import { LoginForm } from '../../components/LoginForm';
-// import { RegistrationForm } from '../../components/RegistrationForm';
+import { RegistrationForm } from '../../components/RegistrationForm';
 
-export function Home() {
+export function Home(props) {
+  const { changePage } = props;
+  const [isLoginStatus, setLoginStatus] = useState(true);
+
   return (
     <div className='wrapper'>
       <div className='container app-section'>
@@ -18,8 +21,10 @@ export function Home() {
           </div>
         </div>
         <div className={styles.formBlock}>
-          <LoginForm />
-          {/* <RegistrationForm /> */}
+          {isLoginStatus 
+            ? <LoginForm changePage={changePage} setLoginStatus={setLoginStatus} />
+            : <RegistrationForm changePage={changePage} setLoginStatus={setLoginStatus} />
+          }
         </div>
       </div>
     </div>

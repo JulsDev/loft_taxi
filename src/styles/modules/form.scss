@@ -62,6 +62,13 @@
   }
 }
 
-.form__notice {
+.form-notice__block {
+  display: flex;
+  align-items: center;
+}
+
+.form-notice {
   color: $primary;
+  font-size: 16px;
+  line-height: 19px;
 }

@@ -1,10 +1,11 @@
 import React from 'react'
 
-export function LoginForm() {
+export function LoginForm(props) {
+  const { changePage, setLoginStatus } = props;
 
   function handleSubmitLogin(e) {
     e.preventDefault();
-    console.log('handleSubmitLogin');
+    changePage('map');
   }
 
   return (
@@ -40,7 +41,15 @@ export function LoginForm() {
       >
         Войти
       </button>
-      <p>Новый пользователь? <span className='form__notice'>Регистрация</span></p>
+      <div className="form-notice__block">
+        <p>Новый пользователь?</p>
+        <button
+          className='form-notice'
+          onClick={() => setLoginStatus(false)}
+        >
+          Регистрация
+        </button>
+      </div>
     </form>
   )
 }
