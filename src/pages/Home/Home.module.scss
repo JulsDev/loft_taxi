@@ -1,0 +1,23 @@
+.logoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: #1C1A19;
+}
+
+.imgBlock {
+  display: flex;
+  flex-direction: column;
+
+  &__img {
+    margin-bottom: 22px;
+  }
+}
+
+.formBlock {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
